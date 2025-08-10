@@ -215,6 +215,7 @@
                                         type="text"
                                         class="form-control"
                                         id="name"
+                                        name="name"
                                         placeholder="Ваше имя"
                                         required="required"
                                     />
@@ -224,14 +225,39 @@
                                         type="email"
                                         class="form-control"
                                         id="email"
+                                        name="email"
                                         placeholder="Ваш Email"
                                     />
+                                </div>
+                                <div class="control-group mb-3">
+                                    <select
+                                        class="form-control"
+                                        id="questionSelect"
+                                        name="questionSelect"
+                                        required
+                                    >
+                                        <option value="" disabled selected>
+                                            Выберите вопрос, который вызвал
+                                            обращение
+                                        </option>
+                                        <option value="Финансовая дисциплина">
+                                            Финансовая дисциплина
+                                        </option>
+                                        <option value="Управление временем">
+                                            Управление временем
+                                        </option>
+                                        <option value="Покупка автомобиля">
+                                            Покупка автомобиля
+                                        </option>
+                                        <option value="Другое">Другое</option>
+                                    </select>
                                 </div>
                                 <div class="control-group mb-3">
                                     <input
                                         type="text"
                                         class="form-control"
                                         id="subject"
+                                        name="subject"
                                         placeholder="Тема обращения"
                                     />
                                 </div>
@@ -239,6 +265,7 @@
                                     <textarea
                                         class="form-control"
                                         id="message"
+                                        name="message"
                                         placeholder="Сообщение"
                                     ></textarea>
                                 </div>
